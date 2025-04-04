@@ -23,7 +23,7 @@ git clone https://github.com/Amit-Gupta-25/String-Calculator.git
   ```example
   require_relative 'string_calculator'
   calculator = StringCalculator.new
-  puts calculator.add('1,2,3') # Output: 6
+  puts calculator.add('1,2,3')
   ```
 
 **Custom Delimiters**
@@ -31,7 +31,7 @@ git clone https://github.com/Amit-Gupta-25/String-Calculator.git
  You can specify custom delimiters using the following syntax:
 
 ```bash
-puts calculator.add("//;\n1;2;3") # Output: 6
+puts calculator.add("//;\n1;2;3")
 ```
 
 **Handling New Lines**
@@ -39,7 +39,7 @@ puts calculator.add("//;\n1;2;3") # Output: 6
 New lines between numbers are also supported:
 
 ```bash
-puts calculator.add("1\n2,3") # Output: 6
+puts calculator.add("1\n2,3")
 ```
 
 **Handling Negative Numbers**
@@ -47,7 +47,7 @@ puts calculator.add("1\n2,3") # Output: 6
 Attempting to add negative numbers will raise an ArgumentError:
 
 ```bash
-calculator.add('1,-2,3,-4') # Raises ArgumentError: Negative numbers not allowed: -2, -4
+calculator.add('1,-2,3,-4')
 ```
 # Running Tests
 
