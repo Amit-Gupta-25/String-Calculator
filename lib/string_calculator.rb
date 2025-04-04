@@ -15,14 +15,14 @@ class StringCalculator
 
   private
 
-  def extract_delimiter(numbers)
-    if numbers.start_with?('//')
-      delimiter = numbers[2]
-      numbers = numbers.split("\n", 2).last
+  def extract_delimiter(value)
+    if value.start_with?('//')
+      delimiter = value[2]
+      value = value.split("\n", 2).last
     else
       delimiter = ','
     end
-    [delimiter, numbers]
+    [delimiter, value]
   end
 
   def parse_numbers(numbers, delimiter)
