@@ -25,3 +25,5 @@ Metrics/MethodLength:
   Enabled: true
 Metrics/PerceivedComplexity:
   Enabled: true
+
+# Add more custom configurations as needed
